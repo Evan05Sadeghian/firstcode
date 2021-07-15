@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--------Import Google Icon Font-->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<!--Import materialize.css-->
+		<!-- Compiled and minified CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
+		<title>Spotlight Films</title>
+		<style>
+			header {
+				background: url(https://closler.org/wp-content/uploads/2019/02/film-reel.png);
+				background-size: cover;
+				background-position: center;
+				min-height: 1000px;
+			}
+			@media screen and (max-width: 670px) {
+				header {
+					min-height: 500px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-----------Nav Bar---------->
+		<header>
+			<nav class="nav-wrapper indigo">
+				<div class="container">
+					<a href="" class="brand-logo">Spotlight Films</a>
+					<a href="" class="sidenav-trigger" data-target="mobile-menu">
+						<i class="material-icons">menu</i>
+					</a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="#">History</a></li>
+						<li><a href="#">Awards</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+					<ul class="sidenav grey lighten-2" id="mobile-menu">
+						<li><a href="#">History</a></li>
+						<li><a href="#">Awards</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--------------------Nav Bar Ends------------------------------------------------>
+		<!----------------------------Inro------------------------------------------>
+		<div class="container">
+			<h1 class="left-align indigo-text">Lights, Camera, Search!</h1>
+		</div>
+		<!---------------------------------End Intro------------------------------------------------------------->
+		<!-----------------------------------Search Bar---------------------------------------------------------->
+		<br />
+		<form>
+			<input
+				type="text"
+				name="name"
+				id="userNameInput"
+				placeholder="Enter Name Here"
+			/>
+			<input id="submit" class="btn" type="submit" value="Search for Movie" />
+		</form>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".sidenav").sidenav();
+			});
+		</script>
+		<script src="Movie.js"></script>
+	</body>
+</html>
